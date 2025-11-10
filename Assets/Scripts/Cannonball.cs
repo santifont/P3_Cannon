@@ -7,8 +7,8 @@ public class Cannonball : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Vector3 direction = new Vector3(0, 500, 0);
-        rb.AddForce(direction * 5);
+       /* Vector3 direction = new Vector3(0, 500, 0);
+        rb.AddForce(direction * 5);*/
 
     }
 
