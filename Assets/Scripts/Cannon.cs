@@ -30,6 +30,12 @@ public class Cannon : MonoBehaviour
         gameManager.GetComponent<GameManager>().IncNumBalas();
     }
 
+    public void ShootRandom()
+    {
+        Instantiate(balaPrefab, puntoDisparo.transform.position, Quaternion.identity);
+        gameManager.GetComponent<GameManager>().IncNumBalas();
+    }
+
     private void OnCollisionEnter(Collision collision)
     {
         renderer.material.color = Color.red;

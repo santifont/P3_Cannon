@@ -1017,6 +1017,7 @@ GameObject:
   - component: {fileID: 737146041}
   - component: {fileID: 737146040}
   - component: {fileID: 737146039}
+  - component: {fileID: 737146043}
   m_Layer: 0
   m_Name: Red_Button
   m_TagString: Untagged
@@ -1116,6 +1117,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &737146043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737146038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0782df59f16ed4fb9d65bb1d56448f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Red_Button
 --- !u!1 &815303120
 GameObject:
   m_ObjectHideFlags: 0
@@ -1128,6 +1141,7 @@ GameObject:
   - component: {fileID: 815303123}
   - component: {fileID: 815303122}
   - component: {fileID: 815303121}
+  - component: {fileID: 815303125}
   m_Layer: 0
   m_Name: White_Button
   m_TagString: Untagged
@@ -1227,6 +1241,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &815303125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815303120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26ad79ce1173cdb4da221c281bf61fe6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::White_Button
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
