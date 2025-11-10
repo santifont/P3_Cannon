@@ -14,12 +14,10 @@ public class Cannonball : MonoBehaviour
         startPoint = GameObject.Find("StartPoint");
         finishPoint = GameObject.Find("FinishPoint");
 
-        float whatever = Vector3.Distance(startPoint.transform.position, finishPoint.transform.position);
-        Debug.Log(whatever);
+        float force = Vector3.Distance(startPoint.transform.position, finishPoint.transform.position);
+        distance = new Vector3(0, force, force * (-1));
 
-        Vector3 direction = new Vector3(0, 500, 0);
-        //rb.AddForce();
-
+        rb.AddForce(distance * 50);
     }
 
     // Update is called once per frame
