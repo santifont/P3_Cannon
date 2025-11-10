@@ -12,7 +12,7 @@ public class Cannon : MonoBehaviour
     {
         renderer = GetComponent<Renderer>();
         balaPrefab = GameObject.Find("Cannonball");
-        puntoDisparo = GameObject.Find("ShootingStartingPoint");
+        puntoDisparo = GameObject.Find("StartPoint");
 
         gameManager = GameObject.Find("GameManager");
     }
@@ -26,10 +26,8 @@ public class Cannon : MonoBehaviour
     public void Shoot()
     {
         Debug.LogWarning("Button -> Shoot");
-
         Instantiate(balaPrefab, puntoDisparo.transform.position, Quaternion.identity);
         gameManager.GetComponent<GameManager>().IncNumBalas();
-
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -6,12 +6,16 @@ public class Cannonball : MonoBehaviour
     private GameObject startPoint;
     private GameObject finishPoint;
     private Vector3 distance;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         startPoint = GameObject.Find("StartPoint");
         finishPoint = GameObject.Find("FinishPoint");
+
+        float whatever = Vector3.Distance(startPoint.transform.position, finishPoint.transform.position);
+        Debug.Log(whatever);
 
         Vector3 direction = new Vector3(0, 500, 0);
         //rb.AddForce();
