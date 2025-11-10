@@ -5,11 +5,12 @@ public class Cannon : MonoBehaviour
     public GameObject balaPrefab;
     private GameObject puntoDisparo;
     private GameObject gameManager;
-
+    private Renderer renderer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        renderer = GetComponent<Renderer>();
         balaPrefab = GameObject.Find("Cannonball");
         puntoDisparo = GameObject.Find("ShootingStartingPoint");
 
@@ -29,5 +30,15 @@ public class Cannon : MonoBehaviour
         Instantiate(balaPrefab, puntoDisparo.transform.position, Quaternion.identity);
         gameManager.GetComponent<GameManager>().IncNumBalas();
 
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        renderer.material.color = Color.red;
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        renderer.material.color = Color.white;
     }
 }
