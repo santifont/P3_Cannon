@@ -8,7 +8,7 @@ public class Red_Button : MonoBehaviour
     void Start()
     {
         reset = GameObject.Find("GameManager");
-        cannonballs = GameObject.FindGameObjectsWithTag("cannonball");
+        
     }
 
     // Update is called once per frame
@@ -22,8 +22,9 @@ public class Red_Button : MonoBehaviour
         Debug.Log("RED");
 
         reset.GetComponent<GameManager>().ResetearBalas();
+        cannonballs = GameObject.FindGameObjectsWithTag("cannonball");
 
-        for (int i = 1; i < cannonballs.Length; i++)
+        for (int i = 0; i < cannonballs.Length; i++)
         {
             Destroy(cannonballs[i]);
         }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5518270024970546659}
   - component: {fileID: 6284624247178987888}
   - component: {fileID: 4564125189906760371}
+  - component: {fileID: 153730671483786767}
   m_Layer: 0
   m_Name: Cannonball
   m_TagString: cannonball
@@ -139,3 +140,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &153730671483786767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4542123968047665300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c0aff194e7feb64cae6c231488f6ab8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Cannonball

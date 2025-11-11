@@ -31,8 +31,8 @@ public class Cannon : MonoBehaviour
 
     public void WhiteShoot()
     {
-        Instantiate(balaPrefab, puntoDisparo.transform.position, Quaternion.identity);
-        balaPrefab.GetComponent<Renderer>().material.color = new Color(Random.value, Random.value, Random.value);
+        Debug.Log("WhiteShoot");
+        GameObject nuevaBala = Instantiate(balaPrefab, puntoDisparo.transform.position, Quaternion.identity);
         gameManager.GetComponent<GameManager>().IncNumBalas();
     }
 
