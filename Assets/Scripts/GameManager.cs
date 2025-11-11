@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
     public void ResetearBalas()
     {
         // Poner el número de balas a cero y cambiar el texto del canvas
+        Debug.LogWarning("Reseteando el número de balas");
+        numBalas = 0;
+        balasTexto.text = "Balas: " + numBalas;
     }
 
     public void IncNumBalas()

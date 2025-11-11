@@ -8,7 +8,6 @@ public class Green_Button : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Debug.Log("Start verde");
         cannon = GameObject.Find("CannonMachine");
     }
 
@@ -20,7 +19,7 @@ public class Green_Button : MonoBehaviour
     
     void OnMouseDown()
     {
-        Debug.Log("Botón verde");
+        Debug.Log("GREEN");
         cannon.GetComponent<Cannon>().Shoot();
     }
 }

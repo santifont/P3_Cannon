@@ -11,7 +11,6 @@ public class Cannon : MonoBehaviour
     void Start()
     {
         renderer = GetComponent<Renderer>();
-        balaPrefab = GameObject.Find("Cannonball");
         puntoDisparo = GameObject.Find("StartPoint");
 
         gameManager = GameObject.Find("GameManager");
@@ -30,9 +29,10 @@ public class Cannon : MonoBehaviour
         gameManager.GetComponent<GameManager>().IncNumBalas();
     }
 
-    public void ShootRandom()
+    public void WhiteShoot()
     {
         Instantiate(balaPrefab, puntoDisparo.transform.position, Quaternion.identity);
+        balaPrefab.GetComponent<Renderer>().material.color = new Color(Random.value, Random.value, Random.value);
         gameManager.GetComponent<GameManager>().IncNumBalas();
     }
 
