@@ -5,7 +5,7 @@ public class Target : MonoBehaviour
 {
     private int state = 0;
     Renderer renderer;
-    float rotationSpeed = 5.0f;
+    float rotationSpeed = 2.5f;
     Vector3 rotationAngle = new Vector3(0, 45.0f, 0);
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
