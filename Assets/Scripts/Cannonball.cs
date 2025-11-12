@@ -29,6 +29,7 @@ public class Cannonball : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        // Se destruye después de chocarse dos veces. 1 =  el cañón, 2 = el target.
         collisionValue++;
         Debug.Log(collisionValue);
 
