@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class Cannon : MonoBehaviour
 {
-    public GameObject balaPrefab;
+    public  GameObject balaPrefab;
     private GameObject startPoint;
     private GameObject finishPoint;
-    private Vector3 distance;
+    private Vector3    distance;
     private GameObject gameManager;
-    private Renderer renderer;
+    private Renderer   renderer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
