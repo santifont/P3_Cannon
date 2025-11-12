@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Cross : MonoBehaviour
 {
-    private int movementSpeed = 4;
+    [SerializeField] private int movementSpeed = 4;
     private Vector3 verticalAxis = new Vector3(0, 1, 0);
     private Vector3 horizontalAxis = new Vector3(-1, 0, 0); // Negativo por la posición de la cámara.
     // Start is called once before the first execution of Update after the MonoBehaviour is created
