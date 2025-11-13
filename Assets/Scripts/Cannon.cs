@@ -5,7 +5,6 @@ public class Cannon : MonoBehaviour
     public  GameObject balaPrefab;
     private GameObject startPoint;
     private GameObject finishPoint;
-    private Vector3    distance;
     private GameObject gameManager;
     private Renderer   renderer;
 
@@ -28,32 +27,28 @@ public class Cannon : MonoBehaviour
 
     public void Shoot()
     {
-        Debug.LogWarning("Button -> Shoot");
         Instantiate(balaPrefab, startPoint.transform.position, Quaternion.identity);
         gameManager.GetComponent<GameManager>().IncNumBalas();
     }
 
     public void WhiteShoot()
     {
-        Debug.Log("WhiteShoot");
-
-
         GameObject nuevaBala = Instantiate(balaPrefab, startPoint.transform.position, Quaternion.identity);
 
-        // Color Aleatorio
-        Color[] randomColor = { Color.white, Color.black, Color.red, Color.green, Color.blue };
-        nuevaBala.GetComponent<Renderer>().material.color = randomColor[Random.Range(0, randomColor.Length)];
+        // Color Aleatorio entre 5 valores concretos
+       /* Color[] randomColor = { Color.white, Color.black, Color.red, Color.green, Color.blue };
+        nuevaBala.GetComponent<Renderer>().material.color = randomColor[Random.Range(0, randomColor.Length)]; */
+
+        // Color aleatorio entre valores completamente aleatorios sin límites
+        nuevaBala.GetComponent<Renderer>().material.color = new Color(Random.value, Random.value, Random.value);
 
         // Tamaño aleatorio
-        float randomScale = Random.Range(1.0f, 2.0f);
+        float randomScale = Random.Range(0.5f, 1.5f);
         nuevaBala.GetComponent<Transform>().localScale = nuevaBala.GetComponent<Transform>().localScale * randomScale;
 
         // Fuerza aleatoria
-        float force = Vector3.Distance(startPoint.transform.position, finishPoint.transform.position);
-        distance = new Vector3(0, force, force * (-1));
-        nuevaBala.GetComponent<Rigidbody>().AddForce(distance * Random.Range(1,51));
-
-
+        Vector3 direccion = finishPoint.transform.position - startPoint.transform.position;
+        nuevaBala.GetComponent<Rigidbody>().AddForce(direccion * Random.Range(180,221));
 
         gameManager.GetComponent<GameManager>().IncNumBalas();
     }

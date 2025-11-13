@@ -2,12 +2,13 @@ using UnityEngine;
 
 public class Cannonball : MonoBehaviour
 {
-    private Rigidbody rb;
-    private GameObject startPoint;
+    private Rigidbody           rb;
+    private GameObject  startPoint;
     private GameObject finishPoint;
-    private Vector3 distance;
-    private int collisionValue = 0;
-    private int shootingForce = 200;
+    private GameObject gameManager;
+    private Vector3       distance;
+    private int     collisionValue = 0;
+    private int      shootingForce = 200;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,8 +18,9 @@ public class Cannonball : MonoBehaviour
         finishPoint = GameObject.Find("FinishPoint");
 
         Vector3 direccion = finishPoint.transform.position - startPoint.transform.position;
-
         rb.AddForce(direccion * shootingForce);
+
+        gameManager = GameObject.Find("GameManager");
     }
 
     // Update is called once per frame
@@ -31,10 +33,9 @@ public class Cannonball : MonoBehaviour
     {
         // Se destruye después de chocarse dos veces. 1 =  el cañón, 2 = el target.
         collisionValue++;
-        Debug.Log(collisionValue);
-
         if ( collisionValue == 2)
         {
+            gameManager.GetComponent<GameManager>().DecNumBalas();
             Destroy(gameObject);
         }
     }
