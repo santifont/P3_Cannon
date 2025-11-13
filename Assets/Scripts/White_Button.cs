@@ -18,7 +18,6 @@ public class White_Button : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log("WHITE");
         cannon.GetComponent<Cannon>().WhiteShoot();
     }
 }

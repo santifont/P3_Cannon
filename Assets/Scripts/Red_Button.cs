@@ -2,13 +2,12 @@ using UnityEngine;
 
 public class Red_Button : MonoBehaviour
 {
-    GameObject[] cannonballs;
-    GameObject   reset;
+    private GameObject[] cannonballs;
+    private GameObject   reset;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         reset = GameObject.Find("GameManager");
-        
     }
 
     // Update is called once per frame
