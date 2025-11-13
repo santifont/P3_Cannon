@@ -6,7 +6,6 @@ public class Cannonball : MonoBehaviour
     private GameObject  startPoint;
     private GameObject finishPoint;
     private GameObject gameManager;
-    private Vector3       distance;
     private int     collisionValue = 0;
     private int      shootingForce = 200;
 

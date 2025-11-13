@@ -43,7 +43,7 @@ public class Cannon : MonoBehaviour
         nuevaBala.GetComponent<Renderer>().material.color = new Color(Random.value, Random.value, Random.value);
 
         // Tamaño aleatorio
-        float randomScale = Random.Range(0.5f, 1.5f);
+        float randomScale = Random.Range(0.3f, 1.0f);
         nuevaBala.GetComponent<Transform>().localScale = nuevaBala.GetComponent<Transform>().localScale * randomScale;
 
         // Fuerza aleatoria
