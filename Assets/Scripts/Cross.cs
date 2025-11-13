@@ -4,7 +4,9 @@ public class Cross : MonoBehaviour
 {
     [SerializeField] private int movementSpeed = 4;
     private Vector3 verticalAxis = new Vector3(0, 1, 0);
-    private Vector3 horizontalAxis = new Vector3(1, 0, 0); // Negativo por la posición de la cámara.
+    private Vector3 horizontalAxis = new Vector3(1, 0, 0);
+    // Límites de la cruz
+    private float yBottom = 4.11f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

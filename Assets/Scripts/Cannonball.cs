@@ -7,7 +7,7 @@ public class Cannonball : MonoBehaviour
     private GameObject finishPoint;
     private Vector3 distance;
     private int collisionValue = 0;
-    private int shootingForce = 48;
+    private int shootingForce = 200;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,10 +16,9 @@ public class Cannonball : MonoBehaviour
         startPoint = GameObject.Find("StartPoint");
         finishPoint = GameObject.Find("FinishPoint");
 
-        float force = Vector3.Distance(startPoint.transform.position, finishPoint.transform.position);
-        distance = new Vector3(0, force, force);
+        Vector3 direccion = finishPoint.transform.position - startPoint.transform.position;
 
-        rb.AddForce(distance * shootingForce);
+        rb.AddForce(direccion * shootingForce);
     }
 
     // Update is called once per frame
