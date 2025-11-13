@@ -152,3 +152,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c0aff194e7feb64cae6c231488f6ab8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Cannonball
+  shootingForce: 48
