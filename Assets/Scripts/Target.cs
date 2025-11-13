@@ -3,11 +3,11 @@ using UnityEngine.UIElements;
 
 public class Target : MonoBehaviour
 {
-    private int state = 0;
-    private Renderer renderer;
-    private float rotationSpeed = 5f;
-    private Vector3 rotationAngle = new Vector3(0, 45.0f, 0);
+    private int        state = 0; // Estado de la diana.
+    private float      rotationSpeed = 5f;
     private GameObject cannon;
+    private Renderer   renderer;
+    private Vector3    rotationAngle = new Vector3(0, 45.0f, 0);
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -35,7 +35,7 @@ public class Target : MonoBehaviour
         else if (state == 3)
         {
            cannon.GetComponent<TargetInstantiates>().SpawnTarget();
-            Destroy(gameObject);
+           Destroy(gameObject);
         }
     }
 }

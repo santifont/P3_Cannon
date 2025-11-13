@@ -4,7 +4,6 @@ using UnityEngine;
 public class Green_Button : MonoBehaviour
 {
     private GameObject cannon;
-    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,7 +18,6 @@ public class Green_Button : MonoBehaviour
     
     void OnMouseDown()
     {
-        Debug.Log("GREEN");
         cannon.GetComponent<Cannon>().Shoot();
     }
 }

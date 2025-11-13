@@ -3,9 +3,9 @@ using TMPro;
 
 public class GameManager : MonoBehaviour
 {
-    int numBalas = 0;
-    GameObject balasCanvas;
-    TextMeshProUGUI balasTexto;
+    private int             numBalas = 0;
+    private GameObject      balasCanvas;
+    private TextMeshProUGUI balasTexto;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     public void ResetearBalas()
     {
         // Poner el número de balas a cero y cambiar el texto del canvas
-        Debug.LogWarning("Reseteando el número de balas");
+        // Debug.LogWarning("Reseteando el número de balas");
         numBalas = 0;
         balasTexto.text = "Balas: " + numBalas;
     }
@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     public void IncNumBalas()
     {
         // Incrementar el número de balas y cambiar el texto del canvas
-        Debug.LogWarning("Incrementando el número de balas");
+        // Debug.LogWarning("Incrementando el número de balas");
 
         numBalas++;
         balasTexto.text = "Balas: " + numBalas;

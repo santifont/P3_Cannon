@@ -3,7 +3,7 @@ using UnityEngine;
 public class Red_Button : MonoBehaviour
 {
     GameObject[] cannonballs;
-    GameObject reset;
+    GameObject   reset;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -19,11 +19,8 @@ public class Red_Button : MonoBehaviour
 
     void OnMouseDown()
     {
-        Debug.Log("RED");
-
         reset.GetComponent<GameManager>().ResetearBalas();
         cannonballs = GameObject.FindGameObjectsWithTag("cannonball");
-
         for (int i = 0; i < cannonballs.Length; i++)
         {
             Destroy(cannonballs[i]);
