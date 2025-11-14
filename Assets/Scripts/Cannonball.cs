@@ -34,7 +34,6 @@ public class Cannonball : MonoBehaviour
         collisionValue++;
         if ( collisionValue == 2)
         {
-            gameManager.GetComponent<GameManager>().DecNumBalas();
             Destroy(gameObject);
         }
     }

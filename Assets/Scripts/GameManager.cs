@@ -39,8 +39,6 @@ public class GameManager : MonoBehaviour
     public void DecNumBalas()
     {
         // Decrementar el número de balas y cambiar el texto del canvas
-        // Debug.LogWarning("Decrementando el número de balas");
-        numBalas--;
-        balasTexto.text = "Balas: " + numBalas;
+
     }
 }
