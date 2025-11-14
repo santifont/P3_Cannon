@@ -48,7 +48,7 @@ public class Cannon : MonoBehaviour
 
         // Fuerza aleatoria
         Vector3 direccion = finishPoint.transform.position - startPoint.transform.position;
-        nuevaBala.GetComponent<Rigidbody>().AddForce(direccion * Random.Range(180,221));
+        nuevaBala.GetComponent<Rigidbody>().AddForce(direccion * Random.Range(150,501));
 
         gameManager.GetComponent<GameManager>().IncNumBalas();
     }
