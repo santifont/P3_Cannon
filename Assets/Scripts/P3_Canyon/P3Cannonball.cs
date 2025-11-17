@@ -1,23 +1,19 @@
 using UnityEngine;
 
-public class Cannonball : MonoBehaviour
+public class P3Cannonball : MonoBehaviour
 {
-    private Rigidbody           rb;
-    private GameObject  startPoint;
-    private GameObject finishPoint;
+    private Rigidbody rb;
+    private GameObject startPoint;
     private GameObject gameManager;
-    private int     collisionValue = 0;
-    private int      shootingForce = 200;
+    private int collisionValue = 0;
+    private int shootingForce = 600;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         startPoint = GameObject.Find("StartPoint");
-        finishPoint = GameObject.Find("FinishPoint");
-
-        Vector3 direccion = finishPoint.transform.position - startPoint.transform.position;
-        rb.AddForce(direccion * shootingForce);
+        rb.AddForce(0, shootingForce, shootingForce);
 
         gameManager = GameObject.Find("GameManager");
     }
@@ -25,14 +21,14 @@ public class Cannonball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     private void OnCollisionEnter(Collision collision)
     {
         // Se destruye después de chocarse dos veces. 1 =  el cañón, 2 = el target.
         collisionValue++;
-        if ( collisionValue == 2)
+        if (collisionValue == 2)
         {
             Destroy(gameObject);
         }
