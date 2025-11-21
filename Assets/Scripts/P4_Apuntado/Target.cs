@@ -6,6 +6,7 @@ public class Target : MonoBehaviour
     private int        state = 0; // Estado de la diana.
     private float      rotationSpeed = 5f;
     private GameObject cannon;
+    private GameObject gameManager;
     private Renderer   renderer;
     private Vector3    rotationAngle = new Vector3(0, 45.0f, 0);
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -13,6 +14,7 @@ public class Target : MonoBehaviour
     {
         renderer = GetComponent<Renderer>();
         cannon = GameObject.Find("Cannon");
+        gameManager = GameObject.Find("GameManager");
     }
 
     // Update is called once per frame
@@ -34,8 +36,9 @@ public class Target : MonoBehaviour
         }
         else if (state == 3)
         {
-           cannon.GetComponent<TargetInstantiates>().SpawnTarget();
-           Destroy(gameObject);
+            cannon.GetComponent<TargetInstantiates>().SpawnTarget();
+            gameManager.GetComponent<GameManager>().IncDianasAcertadas();
+            Destroy(gameObject);
         }
     }
 }
