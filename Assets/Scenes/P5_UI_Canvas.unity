@@ -1000,7 +1000,7 @@ GameObject:
   - component: {fileID: 457853087}
   - component: {fileID: 457853086}
   - component: {fileID: 457853085}
-  - component: {fileID: 457853089}
+  - component: {fileID: 457853090}
   m_Layer: 0
   m_Name: Green_Button
   m_TagString: Untagged
@@ -1100,7 +1100,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &457853089
+--- !u!114 &457853090
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1109,9 +1109,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 457853084}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 871aba609b5ba0247ad11af4d3c79b3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 435a98410661a6544b32229a1820dc08, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Green_Button
+  m_EditorClassIdentifier: Assembly-CSharp::P5_GreenButton
 --- !u!1 &528052202
 GameObject:
   m_ObjectHideFlags: 0
@@ -2428,7 +2428,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.7046364}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 132.5, y: 7.4}
+  m_AnchoredPosition: {x: 132.5, y: 7.399994}
   m_SizeDelta: {x: -299.0695, y: -34.7244}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1818563900
