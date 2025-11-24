@@ -5,7 +5,7 @@ public class P5_GreenButton : MonoBehaviour
 {
     private float           tiempoInicio;
     private float            tiempoFinal;
-    public  float      potenciaAcumulada;
+    public  float      potenciaAcumulada = 0.0f;
     private Color           initialColor;
     private Renderer            renderer;
     private GameObject            cannon;
@@ -31,7 +31,7 @@ public class P5_GreenButton : MonoBehaviour
     {
         renderer.material.color = Color.red;
         tiempoInicio = Time.time;
-        potenciaText.text = "Potencia: " + tiempoInicio;
+        Debug.Log(tiempoInicio);
 
     }
 
@@ -39,9 +39,9 @@ public class P5_GreenButton : MonoBehaviour
     {
         renderer.material.color = initialColor;
         tiempoFinal = Time.time;
-        potenciaText.text = "Potencia: " + tiempoFinal;
 
-        potenciaAcumulada = tiempoFinal - tiempoInicio;
+        potenciaAcumulada = tiempoFinal - tiempoInicio + 1;
+        potenciaText.text = "Potencia: " + potenciaAcumulada;
         cannon.GetComponent<P5_Cannon>().Shoot();
     }
 }
