@@ -2,17 +2,17 @@ using UnityEngine;
 
 public class P3Cannon : MonoBehaviour
 {
-    public GameObject balaPrefab;
+    public GameObject  balaPrefab;
     private GameObject startPoint;
     private GameObject gameManager;
-    private Renderer renderer;
-    private Vector3 power = new Vector3(0, 1, 1);
+    private Renderer   renderer;
+    private Vector3    power = new Vector3(0, 1, 1);
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        renderer = GetComponent<Renderer>();
-        startPoint = GameObject.Find("StartPoint");
+        renderer    = GetComponent<Renderer>();
+        startPoint  = GameObject.Find("StartPoint");
         gameManager = GameObject.Find("GameManager");
     }
 

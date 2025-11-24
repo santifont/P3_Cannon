@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class TargetInstantiates : MonoBehaviour
 {
-    public  GameObject target;
+    public  GameObject         target;
     private GameObject randomPosition;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

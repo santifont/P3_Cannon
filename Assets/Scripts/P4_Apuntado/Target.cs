@@ -3,7 +3,7 @@ using UnityEngine.UIElements;
 
 public class Target : MonoBehaviour
 {
-    private int        state = 0; // Estado de la diana.
+    private int        state         = 0; // Estado de la diana.
     private float      rotationSpeed = 5f;
     private GameObject cannon;
     private GameObject gameManager;

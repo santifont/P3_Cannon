@@ -3,7 +3,7 @@ using UnityEngine;
 public class Red_Button : MonoBehaviour
 {
     private GameObject[] cannonballs;
-    private GameObject   reset;
+    private GameObject         reset;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

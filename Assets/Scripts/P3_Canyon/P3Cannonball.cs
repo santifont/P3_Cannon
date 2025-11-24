@@ -2,11 +2,11 @@ using UnityEngine;
 
 public class P3Cannonball : MonoBehaviour
 {
-    private Rigidbody rb;
+    private Rigidbody          rb;
     private GameObject startPoint;
     private GameObject gameManager;
-    private int collisionValue = 0;
-    private int shootingForce = 600;
+    private int        collisionValue = 0;
+    private int        shootingForce  = 600;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
