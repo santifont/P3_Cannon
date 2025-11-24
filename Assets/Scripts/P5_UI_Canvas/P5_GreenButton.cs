@@ -22,6 +22,11 @@ public class P5_GreenButton : MonoBehaviour
 
     void OnMouseDown()
     {
-        cannon.GetComponent<P5_Cannon>().Shoot();
+        //cannon.GetComponent<P5_Cannon>().Shoot();
+    }
+
+    private void OnMouseUp()
+    {
+        
     }
 }
