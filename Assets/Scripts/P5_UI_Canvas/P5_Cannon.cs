@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Cannon : MonoBehaviour
+public class P5_Cannon : MonoBehaviour
 {
     public  GameObject balaPrefab;
     private GameObject startPoint;
@@ -35,7 +35,7 @@ public class Cannon : MonoBehaviour
 
         // Color Aleatorio entre 5 valores concretos
         /* Color[] randomColor = { Color.white, Color.black, Color.red, Color.green, Color.blue };
-        nuevaBala.GetComponent<Renderer>().material.color = randomColor[Random.Range(0, randomColor.Length)]; */
+         nuevaBala.GetComponent<Renderer>().material.color = randomColor[Random.Range(0, randomColor.Length)]; */
 
         // Color aleatorio entre valores completamente aleatorios sin límites
         nuevaBala.GetComponent<Renderer>().material.color = new Color(Random.value, Random.value, Random.value);
@@ -46,7 +46,7 @@ public class Cannon : MonoBehaviour
 
         // Fuerza aleatoria
         Vector3 direccion = finishPoint.transform.position - startPoint.transform.position;
-        nuevaBala.GetComponent<Rigidbody>().AddForce(direccion * Random.Range(150,501));
+        nuevaBala.GetComponent<Rigidbody>().AddForce(direccion * Random.Range(150, 501));
 
         gameManager.GetComponent<GameManager>().IncNumBalas();
     }

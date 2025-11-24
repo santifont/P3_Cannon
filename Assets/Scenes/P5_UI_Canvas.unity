@@ -2027,7 +2027,7 @@ GameObject:
   - component: {fileID: 1434000677}
   - component: {fileID: 1434000676}
   - component: {fileID: 1434000675}
-  - component: {fileID: 1434000674}
+  - component: {fileID: 1434000678}
   m_Layer: 0
   m_Name: CannonMachine
   m_TagString: Untagged
@@ -2050,19 +2050,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 217713658}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &1434000674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1434000672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9761536dcb20a7d4dae08ea3121bcb20, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Cannon
-  balaPrefab: {fileID: 4542123968047665300, guid: ff3a7ae04abfc594e884942d168fc1a0, type: 3}
 --- !u!136 &1434000675
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2080,7 +2067,7 @@ CapsuleCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.5000001
   m_Height: 2
@@ -2142,6 +2129,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1434000672}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1434000678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434000672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9af6b36ddd950d14e8685bda84512253, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::P5_Cannon
+  balaPrefab: {fileID: 4542123968047665300, guid: ff3a7ae04abfc594e884942d168fc1a0, type: 3}
 --- !u!1 &1459050355
 GameObject:
   m_ObjectHideFlags: 0
