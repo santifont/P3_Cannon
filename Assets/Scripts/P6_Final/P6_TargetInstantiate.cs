@@ -4,10 +4,10 @@ public class P6_TargetInstantiate : MonoBehaviour
 {
     public  GameObject         target;
     // LÍMITES
-    private float topLimit = 10.0f;
-    private float bottomLimit = 4.5f;
-    private float leftLimit = -10.0f;
-    private float rightLimit = 10.0f;
+    private float    topLimit =  10.0f;
+    private float bottomLimit =   4.5f;
+    private float leftLimit   = -10.0f;
+    private float rightLimit  =  10.0f;
     Vector3 randomPosition;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

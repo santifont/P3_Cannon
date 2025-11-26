@@ -20,7 +20,16 @@ public class P5_Cannon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("SPACE");
+            Shoot();
+        }
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            Debug.Log("LEFT SHIFT");
+            WhiteShoot();
+        }
     }
 
     public void Shoot()
