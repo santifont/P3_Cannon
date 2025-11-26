@@ -8,7 +8,7 @@ public class Cross : MonoBehaviour
     // LÍMITES
     private float         topLimit = 10.0f;
     private float      bottomLimit = 4.5f;
-    private float        leftLimit = -9.0f;
+    private float        leftLimit = -10.0f;
     private float       rightLimit = 10.0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,19 +20,19 @@ public class Cross : MonoBehaviour
     void Update()
     {
         //if (Input.GetKey(KeyCode.W))   //Alternativa
-        if (Input.GetKey("w") && transform.position.y < topLimit)
+        if (Input.GetKey("w") && transform.position.y < topLimit || Input.GetKey("up") && transform.position.y < topLimit)
         {
             transform.Translate(verticalAxis * movementSpeed * Time.deltaTime);
         }
-        if (Input.GetKey("s") && transform.position.y > bottomLimit)
+        if (Input.GetKey("s") && transform.position.y > bottomLimit || Input.GetKey("down") && transform.position.y > bottomLimit)
         {
             transform.Translate(verticalAxis * movementSpeed * Time.deltaTime * (-1));
         }
-        if (Input.GetKey("a") && transform.position.x > leftLimit)
+        if (Input.GetKey("a") && transform.position.x > leftLimit || Input.GetKey("left") && transform.position.x > leftLimit)
         {
             transform.Translate(horizontalAxis * movementSpeed * Time.deltaTime * (-1));
         }
-        if (Input.GetKey("d") && transform.position.x < rightLimit)
+        if (Input.GetKey("d") && transform.position.x < rightLimit || Input.GetKey("right") && transform.position.x < rightLimit)
         {
             transform.Translate(horizontalAxis * movementSpeed * Time.deltaTime);
         }

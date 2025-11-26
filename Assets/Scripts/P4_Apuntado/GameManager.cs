@@ -26,7 +26,17 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("spacee ha sido pulsado");
+            GameObject.Find("CannonMachine").GetComponent<P5_Cannon>().Shoot();
+        }
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            Debug.Log("SHIFT ha sido pulsado");
+            GameObject.Find("CannonMachine").GetComponent<P5_Cannon>().WhiteShoot();
+        }
+
     }
 
     public void ResetearBalas()
