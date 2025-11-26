@@ -22,7 +22,6 @@ public class GameManager : MonoBehaviour
         dianasTexto    = dianasCanvas.GetComponent<TextMeshProUGUI>();
         potenciaTexto  = dianasCanvas.GetComponent<TextMeshProUGUI>();
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -36,9 +35,7 @@ public class GameManager : MonoBehaviour
             Debug.Log("SHIFT ha sido pulsado");
             GameObject.Find("CannonMachine").GetComponent<P5_Cannon>().WhiteShoot();
         }
-
     }
-
     public void ResetearBalas()
     {
         // Poner el número de balas a cero y cambiar el texto del canvas
@@ -46,7 +43,6 @@ public class GameManager : MonoBehaviour
         numBalas = 0;
         balasTexto.text = "Balas: " + numBalas;
     }
-
     public void IncNumBalas()
     {
         // Incrementar el número de balas y cambiar el texto del canvas
@@ -54,13 +50,11 @@ public class GameManager : MonoBehaviour
         numBalas++;
         balasTexto.text = "Balas: " + numBalas;
     }
-
     public void DecNumBalas()
     {
         // Decrementar el número de balas y cambiar el texto del canvas
 
     }
-
     public void IncDianasAcertadas()
     {
         numDianas++;
