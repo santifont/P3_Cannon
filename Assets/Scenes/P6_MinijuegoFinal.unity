@@ -1039,10 +1039,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 354494087}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5963504}
-  m_AnchorMax: {x: 0.24453588, y: 0.76570076}
-  m_AnchoredPosition: {x: 22.905, y: 20.3}
-  m_SizeDelta: {x: 141.58, y: 28.7211}
+  m_AnchorMin: {x: 0.025, y: 0.7146667}
+  m_AnchorMax: {x: 0.377, y: 0.8638519}
+  m_AnchoredPosition: {x: -4.116089, y: -15.000061}
+  m_SizeDelta: {x: 588.74, y: 159.73}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &694485293
 MonoBehaviour:
@@ -1091,8 +1091,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 200
+  m_fontSizeBase: 200
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1335,10 +1335,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 354494087}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.76570076}
-  m_AnchorMax: {x: 0.416, y: 1}
-  m_AnchoredPosition: {x: -16.7, y: 3.9}
-  m_SizeDelta: {x: 62.369995, y: 20.379303}
+  m_AnchorMin: {x: 0.025, y: 0.8638519}
+  m_AnchorMax: {x: 0.377, y: 1}
+  m_AnchoredPosition: {x: -4, y: -15}
+  m_SizeDelta: {x: 589.18, y: 145.77}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &839445224
 MonoBehaviour:
@@ -1387,8 +1387,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 200
+  m_fontSizeBase: 200
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1863,10 +1863,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 354494087}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.605, y: 0.8241668}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0021209717, y: -0.000015258789}
-  m_SizeDelta: {x: 0.0042725, y: -0.000061035}
+  m_AnchorMin: {x: 0.5893959, y: 0.8731112}
+  m_AnchorMax: {x: 0.975, y: 1}
+  m_AnchoredPosition: {x: 0, y: -0.000061035156}
+  m_SizeDelta: {x: 0.00018311, y: -0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1818563900
 MonoBehaviour:
@@ -1915,8 +1915,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.93
-  m_fontSizeBase: 24.93
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
