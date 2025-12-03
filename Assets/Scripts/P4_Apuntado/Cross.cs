@@ -2,18 +2,18 @@ using UnityEngine;
 
 public class Cross : MonoBehaviour
 {
-    private int      movementSpeed = 5;
+    private int      movementSpeed = 10;
     private Vector3   verticalAxis = new Vector3(0, 1, 0);
     private Vector3 horizontalAxis = new Vector3(1, 0, 0);
     // LÍMITES
-    private float         topLimit = 10.0f;
-    private float      bottomLimit = 4.5f;
-    private float        leftLimit = -10.0f;
-    private float       rightLimit = 10.0f;
+    private float    topLimit = 15.0f;
+    private float bottomLimit = 4.0f;
+    private float   leftLimit = -15.0f;
+    private float  rightLimit = 15.0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
