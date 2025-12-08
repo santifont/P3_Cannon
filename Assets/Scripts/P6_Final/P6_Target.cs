@@ -17,25 +17,13 @@ public class P6_Target : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (state == 2)
-        {
-            transform.Rotate(rotationAngle * rotationSpeed * Time.deltaTime, Space.World);
-        }
+        
     }
 
     private void OnCollisionEnter(Collision collision)
     {
-        state++;
-
-        if (state == 1)
-        {
-            renderer.material.color = new Color(Random.value, Random.value, Random.value);
-        }
-        else if (state == 3)
-        {
-            gameManager.GetComponent<P6_TargetInstantiate>().SpawnTarget();
-            gameManager.GetComponent<GameManager>().IncDianasAcertadas();
-            Destroy(gameObject);
-        }
+        gameManager.GetComponent<P6_TargetInstantiate>().SpawnTarget();
+        gameManager.GetComponent<P6_GameManager>().IncDianasAcertadas();
+        Destroy(gameObject);
     }
 }

@@ -24,6 +24,6 @@ public class P6_Cannon : MonoBehaviour
     public void Shoot()
     {
         Instantiate(balaPrefab, startPoint.transform.position, Quaternion.identity);
-        gameManager.GetComponent<GameManager>().IncNumBalas();
+        gameManager.GetComponent<P6_GameManager>().IncNumBalas();
     }
 }

@@ -20,9 +20,9 @@ public class Timer : MonoBehaviour
             gameTime = gameTime - Time.deltaTime;
             // timerText.text = gameTime + "/" + Time.deltaTime;
 
-
+            // "Mathf.Round redonde al número entero más cercano"
             // "Mathf.Floor" trunca al número entero actual o anterior. "Mathf.FloorToInt" hace lo mismo pero convierte a int".
-            // "Math.Ceil" y "Math.CeilToInt" hace lo contrario.
+            // "Mathf.Ceil" y "Math.CeilToInt" hace lo contrario.
             float minutes = Mathf.FloorToInt(gameTime / 60);
             float seconds = Mathf.CeilToInt(gameTime % 60);
 
