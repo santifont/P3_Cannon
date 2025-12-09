@@ -26,7 +26,11 @@ public class P6_GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        // PRUEBA DE PRECISIÓN
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log(precision + "% de precisión.");
+        }
     }
     public void ResetearBalas()
     {
@@ -52,7 +56,6 @@ public class P6_GameManager : MonoBehaviour
         numDianas++;
         dianasTexto.text = "Dianas: " + numDianas;
         CalcularPrecision();
-        // Debug.Log(precision + "% de precisión.");
     }
 
     private void CalcularPrecision()
