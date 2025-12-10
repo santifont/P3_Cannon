@@ -2444,6 +2444,7 @@ GameObject:
   - component: {fileID: 1434000677}
   - component: {fileID: 1434000676}
   - component: {fileID: 1434000678}
+  - component: {fileID: 1434000679}
   m_Layer: 0
   m_Name: CannonMachine
   m_TagString: Untagged
@@ -2535,6 +2536,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::P6_Cannon
   balaPrefab: {fileID: 4542123968047665300, guid: ff3a7ae04abfc594e884942d168fc1a0, type: 3}
+--- !u!95 &1434000679
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434000672}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0280bdd32bf9c0547b5ecd59a93c2b5f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1459050355
 GameObject:
   m_ObjectHideFlags: 0
