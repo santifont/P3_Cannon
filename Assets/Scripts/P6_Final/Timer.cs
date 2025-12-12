@@ -3,12 +3,11 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public float gameTime;
+    public float gameTime = 20.0f;
     private TextMeshProUGUI timerText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        gameTime = 20.0f;
         timerText = GetComponent<TextMeshProUGUI>();
     }
 
