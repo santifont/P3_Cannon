@@ -7,6 +7,7 @@ public class P6_GameManager : MonoBehaviour
     private float numDianas = 0.0f;
     private float precision;
     private float gameTime;
+    private GameObject   timer;
     private GameObject   balasCanvas;
     private GameObject   dianasCanvas;
     private GameObject   victoriaCanvas;
@@ -24,6 +25,7 @@ public class P6_GameManager : MonoBehaviour
     void Start()
     {
         //GOs
+        timer          = GameObject.Find("Timer");
         balasCanvas    = GameObject.Find("Balas Canvas");
         dianasCanvas   = GameObject.Find("Dianas Canvas");
         victoriaCanvas = GameObject.Find("VictoriaCanvas");
@@ -60,7 +62,7 @@ public class P6_GameManager : MonoBehaviour
             if (numBalas == 20 || gameTime < 0)
         {
             CalcularPrecision();
-            if(precision >= 50.0f)
+            if (precision >= 50.0f)
             {
                 CargarVictoria();
             }
@@ -117,6 +119,12 @@ public class P6_GameManager : MonoBehaviour
         cannon.SetActive(false);
         fireButton.SetActive(false);
         cannonball = GameObject.FindGameObjectsWithTag("cannonball");
+        for (int i = 0; i < cannonball.Length; i++)
+        {
+            Destroy(cannonball[i]);
+        }
+        gameTime = 0.0f;
+        timer.GetComponent<Timer>().TimerToZero();
         gameObject.SetActive(false);
     }
 
@@ -128,7 +136,13 @@ public class P6_GameManager : MonoBehaviour
         puntero.SetActive(false);
         cannon.SetActive(false);
         fireButton.SetActive(false);
+        cannonball = GameObject.FindGameObjectsWithTag("cannonball");
+        for (int i = 0; i < cannonball.Length; i++)
+        {
+            Destroy(cannonball[i]);
+        }
+        gameTime = 0.0f;
+        timer.GetComponent<Timer>().TimerToZero();
         gameObject.SetActive(false);
-
     }
 }

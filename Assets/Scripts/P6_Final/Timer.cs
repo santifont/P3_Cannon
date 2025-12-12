@@ -38,4 +38,10 @@ public class Timer : MonoBehaviour
     {
         gameTime = gameTime + 3;
     }
+
+    public void TimerToZero()
+    {
+        gameTime = 0.0f;
+        timerText.text = "FIN DE LA PARTIDA";
+    }
 }
